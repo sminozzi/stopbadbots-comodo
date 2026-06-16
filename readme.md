@@ -24,4 +24,4 @@ The package features global optimizations to reduce false positives and support 
 Clone this repository directly into your server's security directory (the default suggested path in the configuration is `/usr/local/apache/modsecurity-cwaf/`):
 
 ```bash
-git clone [https://github.com/sminozzi/stopbadbots-comodo.git](https://github.com/sminozzi/stopbadbots-comodo.git) /usr/local/apache/modsecurity-cwaf/
+git clone "https://github.com/sminozzi/stopbadbots-comodo.git" /usr/local/apache/modsecurity-cwaf/
