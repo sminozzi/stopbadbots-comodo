@@ -1,27 +1,27 @@
-# Comodo ModSecurity Rules (CWAF) - Versão Customizada e Atualizada
+# Comodo ModSecurity Rules (CWAF) - Custom and Updated Version
 
-Este repositório contém a base de regras original do Comodo Web Application Firewall (CWAF), mantida de forma independente e enriquecida com as atualizações frequentes baseadas no projeto [SBB-WAF-Rules](https://github.com/sminozzi/SBB-WAF-Rules). 
+This repository contains the original rule base of the Comodo Web Application Firewall (CWAF), independently maintained and enriched with frequent updates based on the [SBB-WAF-Rules](https://github.com/sminozzi/SBB-WAF-Rules) project.
 
-O pacote conta com otimizações globais para redução de falsos positivos e suporte a regras personalizadas, ideal para quem deseja manter o ecossistema Comodo ativo e protegido contra novas ameaças.
+The package features global optimizations to reduce false positives and support for custom rules, making it ideal for those who want to keep the Comodo ecosystem active and protected against new threats.
 
-## 📁 Estrutura do Repositório
+## 📁 Repository Structure
 
-* `cwaf.conf`: Arquivo mestre que gerencia a ordem de carregamento do ecossistema.
-* `rules/`: Pasta contendo as regras oficiais (.conf) e arquivos de dados (.data) alimentados por patches atualizados.
-* `global/zzz_exclude_global.conf`: Arquivo de mitigação com regras desativadas globalmente para evitar quebras em aplicações comuns.
-* `custom_user.conf`: Arquivo destinado para as suas regras personalizadas.
-* `domains/`: Pasta para configurações e exceções específicas por domínio.
+* `cwaf.conf`: Master file managing the ecosystem's loading order.
+* `rules/`: Folder containing official rules (.conf) and data files (.data) powered by updated patches.
+* `global/zzz_exclude_global.conf`: Mitigation file with globally disabled rules to prevent breaking common applications.
+* `custom_user.conf`: File dedicated to your custom rules.
+* `domains/`: Folder for domain-specific configurations and exceptions.
 
 ---
 
-## 🚀 Como Instalar
+## 🚀 How to Install
 
-### Pré-requisitos
-* ModSecurity instalado e ativo no servidor (Apache, Nginx ou LiteSpeed).
-* Acesso root ou privilégios de administrador para editar as configurações do servidor web.
+### Prerequisites
+* ModSecurity installed and active on the server (Apache, Nginx, or LiteSpeed).
+* Root access or administrator privileges to edit web server configurations.
 
-### Passo 1: Baixar as regras
-Clone este repositório diretamente no diretório de segurança do seu servidor (o padrão sugerido na configuração é `/usr/local/apache/modsecurity-cwaf/`):
+### Step 1: Download the rules
+Clone this repository directly into your server's security directory (the default suggested path in the configuration is `/usr/local/apache/modsecurity-cwaf/`):
 
 ```bash
-git clone [https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git](https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git) /usr/local/apache/modsecurity-cwaf/
+git clone [https://github.com/sminozzi/stopbadbots-comodo.git](https://github.com/sminozzi/stopbadbots-comodo.git) /usr/local/apache/modsecurity-cwaf/
